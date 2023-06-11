@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300,400,700;900&family=Raleway:wght@100;300;500;700&display=swap');
+*{
+    margin: 0;
+    padding: 0PX;
+    box-sizing: border-box;
+    font-family: 'Raleway',sans-serif;
+}
+body{
+   font-size: 16px;
+   margin: 0px;
+   background-color: rgb(160, 164, 164);
+   color: #000;
+   display: flex;
+   align-items: center;
+   justify-content: space-around;
+   min-height: 100vh;
+
+}
+.scoreboard{
+    width: 500px;
+    padding: 20px;
+    min-height: 100px;
+    background-color: #fff;
+    box-shadow: 0 0 5px 3px rgba(0, 0, 0, 0.3);
+    border-radius: 15px;
+
+}
+.header{
+    background-color: rgb(19, 122, 190);
+    color: #fff;
+    display: flex;
+    justify-content: 15px 20px;
+    margin: -19px -20px 0px;
+    padding:15px 20px ;
+    border-radius: 15px 15px 0px 0px;
+    font-size: 20px ;
+
+}
+.question_set{
+    display: none;
+}
+.question_set.active{
+    display: block;
+}
+.question_set h4{
+    margin: 0 0 15px;
+    font-size: 20px;
+
+}
+.qa_ans_row{
+    position: relative;
+    margin-bottom: 10px;
+}
+.qa_ans_row input{
+    opacity: 0;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    cursor: pointer;
+}
+.qa_ans_row span{
+    display: block;
+    padding: 8px 15px;
+    background-color: #bad0c9;
+    border-radius: 1px;
+    transition: all 0.3s ease-out;
+}
+.qa_ans_row:hover span{
+    background-color: #9ab5ac;
+}
+.qa_ans_row input:checked + span{
+    background-color: #f93c3c;
+}
+.qa_ans_row input[valid]:checked + span{
+    background-color: green;
+    color: #fff;
+}
+.qa_footer{
+    padding: 10px 0 0;
+    text-align: right;
+}
+.btn1{
+    display: inline-block;
+    padding: 8px 20px;
+    background-color: #0b58a7;
+    color: #fff;
+    border-radius: 15px;
+    cursor: pointer;
+    transition: all 0.3s ease-out;
+}
+.btn1:hover{
+    background-color: #064484;
+}
+#countdown{
+    padding-left: 360px;
+}
